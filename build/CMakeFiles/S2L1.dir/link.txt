@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/S2L1.dir/2sem/lab1/main.cpp.o CMakeFiles/S2L1.dir/2sem/lab1/tests/testMap.cpp.o -o S2L1  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a

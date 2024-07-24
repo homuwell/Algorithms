@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/S1L4.dir/1sem/lab4/main.cpp.o CMakeFiles/S1L4.dir/1sem/lab3/classes/Tree.cpp.o CMakeFiles/S1L4.dir/1sem/lab4/tests/testAlgs.cpp.o -o S1L4  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a

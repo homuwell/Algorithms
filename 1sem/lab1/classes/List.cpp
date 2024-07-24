@@ -182,38 +182,33 @@ void List::set(size_t id, int num) {
 bool List::isEmpty() {
   return head == nullptr;
 }
-size_t List::find_first(List &name) {
-  if (head == nullptr || name.head == nullptr) {
+size_t List::find_first(List &second_list) {
+  if (head == nullptr || second_list.head == nullptr) {
     throw out_of_range("Error, some of the List is Empty");
   }
-  bool flag;
-  int counter;
-  counter = 0;
-  Node *tmp_ptr = head;
-  Node *tmp_ptr_name = name.head;
-  Node *rmbr_ptr = tmp_ptr;
-  if (name.get_size() > get_size()) {
-    return 0;
-  }
-  while (tmp_ptr != nullptr) {
-    flag = true;
-    rmbr_ptr = tmp_ptr;
-    while (tmp_ptr_name != nullptr) {
-      if (tmp_ptr_name->info != tmp_ptr->info) {
-        flag = false;
-      }
-      tmp_ptr = tmp_ptr->next;
-      tmp_ptr_name = tmp_ptr_name->next;
-      if (tmp_ptr == nullptr && tmp_ptr_name != nullptr) { break; }
+  Node *first_list_curr_elem = head;
+  Node *second_list_curr_elem = second_list.head;
+  Node *first_list_next_elem = head;
+  int index = 0;
 
+  while(first_list_next_elem) {
+    first_list_curr_elem = first_list_next_elem;
+    second_list_curr_elem = second_list.head;
+    while (first_list_curr_elem
+      && second_list_curr_elem
+      && first_list_curr_elem->info == second_list_curr_elem->info) {
+      first_list_curr_elem = first_list_curr_elem->next;
+      second_list_curr_elem = second_list_curr_elem->next;
     }
-    if (flag) {
-      return counter;
+
+    if (second_list_curr_elem == nullptr) {
+      return index;
     }
-    counter++;
-    tmp_ptr_name = name.head;
-    tmp_ptr = rmbr_ptr->next;
+
+    first_list_next_elem = first_list_next_elem->next;
+    index++;
   }
+  return 0;
 }
 List::~List() {
   clear();
