@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/S2CW.dir/2sem/course_work/main.cpp.o CMakeFiles/S2CW.dir/2sem/course_work/classes/FlowNetwork.cc.o CMakeFiles/S2CW.dir/2sem/course_work/tests/TestFlowNetwork.cpp.o -o S2CW  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a

@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/S1CW.dir/1sem/course_work/main.cpp.o CMakeFiles/S1CW.dir/1sem/course_work/tests/tests.cpp.o -o S1CW  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a

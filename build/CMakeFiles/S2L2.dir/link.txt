@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/S2L2.dir/2sem/lab2/main.cpp.o CMakeFiles/S2L2.dir/2sem/lab2/classes/SymbolsList.cc.o CMakeFiles/S2L2.dir/2sem/lab2/classes/ShannonFano.cc.o CMakeFiles/S2L2.dir/2sem/lab2/classes/SFTree.cc.o CMakeFiles/S2L2.dir/2sem/lab2/tests/TestShanonFano.cc.o -o S2L2  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a
