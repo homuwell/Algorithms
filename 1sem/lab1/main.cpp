@@ -3,7 +3,7 @@
 #include "gmock/gmock.h"
 #include "headers/List.h"
 int main(int argc, char **argv) {
-  /*List main;
+  List main;
   List main1;
   int value;
   main.push_back(5);
@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
   main1.push_back(20);
   main1.push_back(25);
   value = main.find_first(main1);
-  cout << value;*/
+  cout << value;
   testing::InitGoogleTest(&argc, argv);
   RUN_ALL_TESTS();
   return 0;
